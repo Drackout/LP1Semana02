@@ -19,8 +19,6 @@ namespace ValoresEspeciais
             Console.WriteLine(d);
             Console.WriteLine(sh);
             Console.WriteLine(lo);
-
-            
             
             Console.WriteLine(float.PositiveInfinity);
             Console.WriteLine(float.NegativeInfinity);
@@ -29,6 +27,21 @@ namespace ValoresEspeciais
             Console.WriteLine(double.PositiveInfinity);
             Console.WriteLine(double.NegativeInfinity);
             Console.WriteLine(double.NaN);
+
+            //overflow
+            double overflow1 = 2 * double.MaxValue;
+            double overflow2 = double.MaxValue+1;
+            Console.WriteLine(overflow1);
+            Console.WriteLine(overflow2);
+
+            //underflow
+            float f1 , f2 ;
+            f1 = f2 = 9999.0f;
+            Console.WriteLine(f1 == f2 + 0.0001f);
+
+            f1 = f2 = 999999.0f;
+            Console.WriteLine(f1 == f2 + 0.001f);
+
 
         }
     }
