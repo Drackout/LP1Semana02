@@ -6,18 +6,18 @@ namespace Cilindro
     {
         static void Main(string[] args)
         {
-            float altura;
-            float raio;
-            float pi = 3.1315926f;
-            float volume;
+            double altura;
+            double raio;
+            double pi = Math.PI;
+            double volume;
 
             Console.Write("Altura:");
-            altura = float.Parse(Console.ReadLine());
+            altura = double.Parse(Console.ReadLine());
             
             Console.Write("Raio:");
-            raio = float.Parse(Console.ReadLine());
+            raio = double.Parse(Console.ReadLine());
 
-            volume = pi*(raio*raio)*altura;
+            volume = pi*Math.Pow(raio, 2)*altura;
             Console.WriteLine(volume);
 
             volume = 2*pi*raio*(raio+altura);
