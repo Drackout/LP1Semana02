@@ -50,6 +50,13 @@ namespace ValoresEspeciais
             Console.WriteLine(var1++);
             Console.WriteLine(var1);
 
+            float var2 = float.MaxValue;
+            var2 *= 1.5f;
+            Console.WriteLine(var2);
+            
+            float var3 = float.MaxValue;
+            var3 *= var3;
+            Console.WriteLine(var3);
 
         }
     }
