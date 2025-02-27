@@ -6,7 +6,11 @@ namespace SmoothOperator
     {
         private static void Main(string[] args)
         {
-            Console.WriteLine("Hello LP1!");
+            sbyte valor;
+            valor = sbyte.Parse(Console.ReadLine());
+
+            Console.WriteLine(--valor);
+            Console.WriteLine(++valor);
         }
     }
 }
