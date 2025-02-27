@@ -58,6 +58,10 @@ namespace ValoresEspeciais
             var3 *= var3;
             Console.WriteLine(var3);
 
+            float var4, var5;
+            var4 = var5 = 45.0f;
+            var4 += 0.0000009f;
+            Console.WriteLine(var4 == var5);
         }
     }
 }
