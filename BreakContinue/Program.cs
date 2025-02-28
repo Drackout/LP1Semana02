@@ -12,13 +12,13 @@ namespace BreakContinue
             {
                 turn++;
 
-                // Ends loop if we're over the maximum number of turns
+                // Ends loop if we're over the maximum number of turns!
                 if (turn >= maxTurns)
                 {
                     break;
                 }
 
-                // Skips current cycle if current turn is divisible by 3
+                // Skips current cycle if current turn is divisible by 3 
                 if (turn % 3 == 0 || turn == 10)
                 {
                     continue;
